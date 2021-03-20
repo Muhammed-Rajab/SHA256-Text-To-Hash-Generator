@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #EC6F66, #F3A183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Form starts here */
+
+.form {
+    background-color: white;
+    width: 80%;
+    height: 70%;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    background: -webkit-linear-gradient(#e93124, #e95d2a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.inputDiv {
+    /* background-color: rebeccapurple; */
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#inputBox {
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    width: 90%;
+    height: 3rem;
+    border-radius: 9px;
+    font-size: 1.05rem;
+    padding-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+/* #submitHash {
+    width: 50%;
+    background-color: white;
+    border-radius: 40px;
+    box-shadow: 0px 0px 18px 1px rgb(0 0 0 / 17%);
+    padding: 1rem;
+    box-sizing: border-box;
+    /* border: 0.5px solid rgba(0, 0, 0, 0.25); */
+
+
+/* border: none; */
+
+
+/* font-family: 'Courier New', Courier, monospace; */
+
+
+/* } */
+
+.generateHash {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hint {
+    color: rgb(151, 146, 146);
+    /* height: 50%; */
+}
+
+.hash {
+    word-break: break-all;
+    padding: 0px 1rem 0px 1rem;
+    text-align: center;
+}
+
+
+/* Media queries for mobile responsiveness */
+
+@media (max-width: 1024px) {
+    .form {
+        width: 93%;
+        height: 90%;
+    }
+}
